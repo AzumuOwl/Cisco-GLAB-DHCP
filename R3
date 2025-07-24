@@ -1,0 +1,2 @@
+interface gi0/0
+ glbp 10 ip 10.0.128.10
