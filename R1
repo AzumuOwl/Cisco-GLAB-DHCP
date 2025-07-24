@@ -1,0 +1,14 @@
+interface g0/0
+ ip address 192.168.1.2 255.255.255.0
+ glbp 1 ip 192.168.1.1
+ glbp 1 priority 110
+ glbp 1 preempt
+ glbp 1 load-balancing round-robin
+ no shutdown
+
+ip dhcp excluded-address 192.168.1.1 192.168.1.10
+ip dhcp pool VLAN10
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1
+ dns-server 8.8.8.8
+ lease 0 1
