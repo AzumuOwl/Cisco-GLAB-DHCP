@@ -1,6 +1,5 @@
 interface g0/0
  ip address 192.168.1.3 255.255.255.0
- ip nat inside
  glbp 1 ip 192.168.1.1
  glbp 1 priority 100
  glbp 1 preempt
