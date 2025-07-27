@@ -1,2 +1,7 @@
-interface gi0/0
- glbp 10 ip 10.0.128.10
+conf t
+interface g0/0
+ ip address 192.168.10.3 255.255.255.0
+ glbp 10 ip 192.168.10.254
+ glbp 10 priority 100
+ glbp 10 preempt
+ no shutdown
